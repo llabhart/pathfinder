@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5474261217A7035500A49B4C /* lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = 5474261117A7035500A49B4C /* lookup.c */; };
+		54A7586217A176BA00C279D8 /* cpucycles.c in Sources */ = {isa = PBXBuildFile; fileRef = 54A7586117A176BA00C279D8 /* cpucycles.c */; };
+		54A7586517A177B700C279D8 /* posgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 54A7586417A177B700C279D8 /* posgen.c */; };
 		54C678D51795C3D500AC8765 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C678D41795C3D500AC8765 /* main.c */; };
 		54C678D71795C3D500AC8765 /* pathfinder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54C678D61795C3D500AC8765 /* pathfinder.1 */; };
+		54C678ED1795FA2E00AC8765 /* mapgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C678E91795FA2E00AC8765 /* mapgen.c */; };
+		54C678EE1795FA2E00AC8765 /* pathfinder.c in Sources */ = {isa = PBXBuildFile; fileRef = 54C678EB1795FA2E00AC8765 /* pathfinder.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +30,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5474261117A7035500A49B4C /* lookup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lookup.c; sourceTree = "<group>"; };
+		54A7585F17A14DCD00C279D8 /* lookup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lookup.h; sourceTree = "<group>"; };
+		54A7586017A1767D00C279D8 /* cpucycles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpucycles.h; sourceTree = "<group>"; };
+		54A7586117A176BA00C279D8 /* cpucycles.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpucycles.c; sourceTree = "<group>"; };
+		54A7586317A177AC00C279D8 /* posgen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = posgen.h; sourceTree = "<group>"; };
+		54A7586417A177B700C279D8 /* posgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posgen.c; sourceTree = "<group>"; };
 		54C678D11795C3D500AC8765 /* pathfinder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pathfinder; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C678D41795C3D500AC8765 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		54C678D61795C3D500AC8765 /* pathfinder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = pathfinder.1; sourceTree = "<group>"; };
+		54C678E91795FA2E00AC8765 /* mapgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mapgen.c; sourceTree = "<group>"; };
+		54C678EA1795FA2E00AC8765 /* mapgen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapgen.h; sourceTree = "<group>"; };
+		54C678EB1795FA2E00AC8765 /* pathfinder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pathfinder.c; sourceTree = "<group>"; };
+		54C678EC1795FA2E00AC8765 /* pathfinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pathfinder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +75,18 @@
 		54C678D31795C3D500AC8765 /* pathfinder */ = {
 			isa = PBXGroup;
 			children = (
+				54A7586117A176BA00C279D8 /* cpucycles.c */,
+				54A7586017A1767D00C279D8 /* cpucycles.h */,
+				54A7585F17A14DCD00C279D8 /* lookup.h */,
+				5474261117A7035500A49B4C /* lookup.c */,
 				54C678D41795C3D500AC8765 /* main.c */,
+				54C678E91795FA2E00AC8765 /* mapgen.c */,
+				54C678EA1795FA2E00AC8765 /* mapgen.h */,
 				54C678D61795C3D500AC8765 /* pathfinder.1 */,
+				54C678EB1795FA2E00AC8765 /* pathfinder.c */,
+				54C678EC1795FA2E00AC8765 /* pathfinder.h */,
+				54A7586417A177B700C279D8 /* posgen.c */,
+				54A7586317A177AC00C279D8 /* posgen.h */,
 			);
 			path = pathfinder;
 			sourceTree = "<group>";
@@ -118,6 +143,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C678D51795C3D500AC8765 /* main.c in Sources */,
+				54C678ED1795FA2E00AC8765 /* mapgen.c in Sources */,
+				54C678EE1795FA2E00AC8765 /* pathfinder.c in Sources */,
+				54A7586217A176BA00C279D8 /* cpucycles.c in Sources */,
+				54A7586517A177B700C279D8 /* posgen.c in Sources */,
+				5474261217A7035500A49B4C /* lookup.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +246,7 @@
 				54C678DC1795C3D500AC8765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
